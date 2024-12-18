@@ -1,0 +1,12 @@
+[install]
+# Direktori cache Bun
+cache-dir = "node_modules/.bun"
+
+[bundler]
+# Entry point dan direktori output
+entry = "index.ts"
+outdir = "dist"
+# Target bundling untuk server
+target = "bun"
+minify = true # Minifikasi kode
+sourcemap = false # Menonaktifkan sourcemap

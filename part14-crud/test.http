@@ -1,0 +1,27 @@
+### add mahasiswa
+POST http://localhost:3000/mahasiswa
+Content-Type: application/json
+{
+  "npm": "123456",
+  "nama": "Budi Santoso"
+}
+
+### get all mahasiswa
+GET http://localhost:3000/mahasiswa
+Content-Type: application/json
+
+### get mahasiswa by id
+GET http://localhost:3000/mahasiswa/14
+Content-Type: application/json
+
+### update mahasiswa
+PUT http://localhost:3000/mahasiswa/1
+Content-Type: application/json
+{
+  "npm": "12345678",
+  "nama": "Budi Santoso Update"
+}
+
+### delete mahasiswa
+DELETE http://localhost:3000/mahasiswa/1
+Content-Type: application/json

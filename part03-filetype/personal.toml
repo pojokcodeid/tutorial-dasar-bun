@@ -1,0 +1,4 @@
+# Objek dengan detail nama dan usia
+[person]
+name = "Alice"
+age = 25

@@ -1,0 +1,9 @@
+logLevel = "debug"
+
+[test]
+root = "./__tests__"
+coverage = true
+
+[install]
+optional = true
+dev = true

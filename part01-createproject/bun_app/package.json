@@ -1,0 +1,15 @@
+{
+  "name": "bun_app",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "bun run --watch index.js",
+    "start": "bun run index.js"
+  }
+}

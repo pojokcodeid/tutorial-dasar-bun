@@ -1,0 +1,16 @@
+{
+  "name": "part06-watch",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "bun run --watch index.ts",
+    "mode":"bun run --hot index.ts",
+    "start": "bun run index.ts"
+  }
+}
