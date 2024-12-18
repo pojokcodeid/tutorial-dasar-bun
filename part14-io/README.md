@@ -1,0 +1,23 @@
+# part14-io
+
+To install dependencies:
+
+```bash
+bun install
+```
+
+To run:
+
+```bash
+bun run index.ts
+```
+
+This project was created using `bun init` in bun v1.1.38. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+
+- cara menjalankan
+
+```
+bun .\index.ts add "Belajar TypeScript" "Konversi dari JavaScript ke TypeScript"
+bun .\index.ts view
+bun .\index.ts delete 1734493100281
+```
