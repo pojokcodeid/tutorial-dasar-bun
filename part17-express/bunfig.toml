@@ -1,0 +1,9 @@
+[compiler]
+target = "es2020"
+
+[runtime]
+watch = true
+
+[test]
+root = "./__tests__"
+coverage = true
