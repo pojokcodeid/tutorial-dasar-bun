@@ -36,7 +36,7 @@ export const createMahasiswa = async (req: Request) => {
       data: value,
     });
     logger.info(`Mahasiswa created: ${JSON.stringify(newMahasiswa)}`);
-    return successResponse("Mahasiswa created", newMahasiswa);
+    return successResponse("Mahasiswa created", newMahasiswa,201);
   } catch (err: any) {
     logger.error("Error creating Mahasiswa: " + err.message);
     return errorResponse("Error creating Mahasiswa");

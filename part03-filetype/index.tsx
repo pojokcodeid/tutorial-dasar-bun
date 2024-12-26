@@ -1,9 +1,9 @@
-function Component(props: {message: string}) {
+function Comp(props) {
   return (
-    <body>
-      <h1 style={{color: 'red'}}>{props.message}</h1>
-    </body>
+    <div>
+      <h1>{props.message}</h1>
+    </div>
   );
 }
 
-console.log(<Component message="Hello world!" />);
+console.log(<Comp message="Hello, Bun!" />);

@@ -1,4 +1,4 @@
-import { jumlah } from "./packages/package-a/src/Calc";
+import { jumlah } from "./packages/package-a/src/calc";
 
 let nilai1 = 10;
 let nilai2 = 10;

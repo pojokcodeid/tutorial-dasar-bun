@@ -3,7 +3,7 @@ console.log(Bun.version);
 // Menampilkan commit git yang digunakan untuk membangun versi Bun saat ini.
 console.log(Bun.revision);
 // Alias untuk process.env, digunakan untuk mengakses variabel lingkungan.
-console.log(Bun.env.NODE_ENV);
+console.log(Bun.env);
 // Menunjukkan path absolut dari file yang dieksekusi dengan
 if (import.meta.path === Bun.main) {
   console.log("Script ini dieksekusi langsung.");
