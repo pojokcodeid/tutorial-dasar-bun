@@ -11,7 +11,7 @@ GET http://localhost:3000/mahasiswa
 Content-Type: application/json
 
 ### get mahasiswa by id
-GET http://localhost:3000/mahasiswa/3
+GET http://localhost:3000/mahasiswa/1
 Content-Type: application/json
 
 ### update mahasiswa
@@ -19,9 +19,9 @@ PUT http://localhost:3000/mahasiswa/1
 Content-Type: application/json
 {
   "npm": "12345678",
-  "nama": "Budi Santoso Update"
+  "nama": "Budi Santoso"
 }
 
 ### delete mahasiswa
-DELETE http://localhost:3000/mahasiswa/9
+DELETE http://localhost:3000/mahasiswa/2
 Content-Type: application/json

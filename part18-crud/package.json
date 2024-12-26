@@ -18,6 +18,7 @@
   "scripts": {
     "build": "bun build index.ts --compile --minify --sourcemap --outfile dist/restapi",
     "dev": "bun run --watch index.ts",
-    "start": "bun run index.ts"
+    "start": "bun run index.ts",
+    "test": "bun test --watch ./src/tests/*.test.ts"
   }
 }
