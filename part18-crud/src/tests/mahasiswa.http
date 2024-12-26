@@ -23,5 +23,5 @@ Content-Type: application/json
 }
 
 ### delete mahasiswa
-DELETE http://localhost:3000/mahasiswa/2
+DELETE http://localhost:3000/mahasiswa/1
 Content-Type: application/json
