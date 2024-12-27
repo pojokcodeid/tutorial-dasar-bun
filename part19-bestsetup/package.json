@@ -1,0 +1,34 @@
+{
+  "name": "part19-bestsetup",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
+    "typescript-eslint": "^8.18.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": "eslint --fix"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "check-types": "bunx tsc --noEmit --pretty",
+    "check-lint": "bunx eslint .",
+    "check-format": "npx prettier . --check",
+    "build": "bun build index.ts --compile --minify --sourcemap --outfile dist/restapi",
+    "prepare": "husky"
+  }
+}
