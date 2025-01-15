@@ -24,7 +24,8 @@
     "check-types": "bunx tsc --noEmit --pretty",
     "check-lint": "bunx eslint .",
     "check-format": "npx prettier . --check",
-    "build": "bun build index.ts --compile --minify --sourcemap --outfile dist/restapi",
+    "build": "bun build index.ts --compile --minify --sourcemap --outfile dist/myapp",
+    "start": "bun run dist/myapp",
     "prepare": "husky"
   }
 }

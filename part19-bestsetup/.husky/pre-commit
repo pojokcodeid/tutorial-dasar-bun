@@ -1,37 +1,40 @@
-echo '🏗️👷 Styling, testing and building your project before committing'
+echo '🏗️👷 Preparing your project: Styling, linting, type-checking, and building before committing...'
 
 # Check Prettier standards
 bun run check-format ||
 (
-  echo '🤢🤮🤢🤮 Its FOKING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
-    Prettier Check Failed. Run bun run format, add changes and try commit again.';
+  echo '🚨 Styling Check Failed 🚨
+    Your code formatting does not meet the standard.
+    Please run "bun run format" to fix it, add the changes, and try committing again.';
   false;
 )
 
 # Check ESLint Standards
 bun run check-lint ||
 (
-  echo '😤🏀👋😤 Get that weak shit out of here! 😤🏀👋😤
-    ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
+  echo '🚨 Linting Check Failed 🚨
+    Your code contains linting errors.
+    Please review the issues above, fix them, add the changes, and try committing again.';
   false; 
 )
 
 # Check tsconfig standards
 bun run check-types ||
 (
-  echo '🤡😂❌🤡 Failed Type check. 🤡😂❌🤡
-    Are you seriously trying to write that? Make the changes required above.'
+  echo '🚨 Type Checking Failed 🚨
+    There are issues with your TypeScript types.
+    Please review the errors above, fix them, add the changes, and try committing again.';
   false;
 )
 
 # build projeck
 bun run build ||
 (
-  echo '❌👷🏼‍♀️👷🏼‍♀️ Get that weak shit out of here! ❌👷🏼‍♀️👷🏼‍♀️
-    Next build failed: View the errors above to see why. 
-  '
+  echo '🚨 Build Failed 🚨
+    The project failed to build. 
+    Please review the build errors above, fix them, and try committing again.';
   false;
 )
 
 # If everything passes... Now we can commit
-echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
+echo '✅ All checks passed! Proceeding with commit. ✅'

@@ -16,7 +16,7 @@ This project was created using `bun init` in bun v1.1.42. [Bun](https://bun.sh) 
 
 panduan
 
-```
+```bash
 mkdir example_proj
 cd example_proj
 bun init
